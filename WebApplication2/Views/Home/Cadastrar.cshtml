@@ -1,0 +1,17 @@
+﻿@model BeneficiarioEntity
+
+<div class="row">
+    <form asp-action="Cadastrar">
+        <div class="form-group">
+            <label asp-for="Nome"></label>
+            <input asp-for="Nome"/>
+        </div>       
+        <div class="form-group">
+            <label asp-for="Cpf"></label>
+            <input asp-for="Cpf"/>
+        </div>
+        <div>
+            <input type="submit" value="Salvar"/>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BeneficiarioEntity>
+
+<table>
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </th>        
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>        
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>        
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>        
+        <th>
+            @Html.DisplayNameFor(model => model.DataAdesao)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => item.Nome)
+                </td>    
+                
+                <td>
+                    @Html.DisplayNameFor(model => item.Cpf)
+                </td>    
+                <td>
+                    @Html.DisplayNameFor(model => item.Password)
+                </td>    
+                <td>
+                    @Html.DisplayNameFor(model => item.Telefone)
+                </td>    
+                <td>
+                    @Html.DisplayNameFor(model => item.Tipo)
+                </td>    
+                <td>
+                    @Html.DisplayNameFor(model => item.DataAdesao)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
